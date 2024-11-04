@@ -1,1 +1,4 @@
 __pycache__
+serveur/Tirage/__pycache__
+serveur/Tirage/migrations/__pycache__
+serveur/db.sqlite3
