@@ -9,19 +9,23 @@ chapeau2 = [equipe for equipe in equipes if equipe["chapeau"] == 2]
 chapeau3 = [equipe for equipe in equipes if equipe["chapeau"] == 3]
 chapeau4 = [equipe for equipe in equipes if equipe["chapeau"] == 4]
 
+
 def tirage_pour_equipe(equipe, chapeau1, chapeau2, chapeau3, chapeau4):
     """Tirage au sort pour une equipe"""
     tirage = {}
     chapeaux = [chapeau1, chapeau2, chapeau3, chapeau4]
     for i, chapeau in enumerate(chapeaux, start=1):
-        # Exclure l'équipe elle-même du chapeau
-        chapeau_sans_equipe = [adversaire for adversaire in chapeau if adversaire["nom"] != equipe["nom"]]
+        # Exclure l'équipe elle-même et les autre equipes du meme championnat que l'equipe actuelle
+        chapeau_sans_equipe = [
+            adversaire
+            for adversaire in chapeau
+            if adversaire["nom"] != equipe["nom"]
+            and adversaire["championnat"] != equipe["championnat"]
+        ]
         adversaires = random.sample(chapeau_sans_equipe, 2)
-        tirage[f"pot_{i}"] = {
-            "home": adversaires[0],
-            "away": adversaires[1]
-        }
+        tirage[f"pot_{i}"] = {"home": adversaires[0], "away": adversaires[1]}
     return tirage
+
 
 # Effectuer le tirage pour toutes les équipes
 resultats = {}
@@ -34,7 +38,7 @@ for equipe in equipes:
         "championnat": equipe["championnat"],
         "chapeau": equipe["chapeau"],
         "logo": equipe["logo"],
-        **tirage
+        **tirage,
     }
 
 print(json.dumps(resultats, indent=4, ensure_ascii=False))
