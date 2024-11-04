@@ -21,3 +21,4 @@ class Equipe(NameModel):
     quel_championat = models.ForeignKey(Championnat, on_delete=models.CASCADE)
     quel_chapeau = models.ForeignKey(Chapeau, on_delete=models.CASCADE)
     logo = models.ImageField()
+    
