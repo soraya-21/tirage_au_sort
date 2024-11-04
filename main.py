@@ -108,28 +108,3 @@ draw.get_chapeau()
 
 
 
-
-
-#  result[equipe["nom"]] = {
-#             "ville": equipe["nom"].split()[0],  # Ville fictive basée sur le premier mot du nom
-#             "pays": equipe["pays"],
-#             "championnat": equipe["championnat"],
-#             "chapeau": equipe["chapeau"],
-#             "logo": equipe["logo"],
-#             "pot_1": {
-#                 "home": pots[1][i*2] if len(pots[1]) > i*2 else None,  # Vérifier si assez d'équipes dans pot 2
-#                 "away": pots[1][i*2+1] if len(pots[1]) > i*2+1 else None
-#             },
-#             "pot_2": {
-#                 "home": pots[2][i*2] if len(pots[2]) > i*2 else None,  # Vérifier si assez d'équipes dans pot 2
-#                 "away": pots[2][i*2+1] if len(pots[2]) > i*2+1 else None
-#             },
-#             "pot_3": {
-#                 "home": pots[3][i*2] if len(pots[3]) > i*2 else None,  # Vérifier si assez d'équipes dans pot 3
-#                 "away": pots[3][i*2+1] if len(pots[3]) > i*2+1 else None
-#             },
-#             "pot_4": {
-#                 "home": pots[4][i*2] if len(pots[4]) > i*2 else None,  # Vérifier si assez d'équipes dans pot 4
-#                 "away": pots[4][i*2+1] if len(pots[4]) > i*2+1 else None
-#             }
-#         }
