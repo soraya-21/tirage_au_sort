@@ -14,16 +14,31 @@ def tirage_pour_equipe(equipe, chapeau1, chapeau2, chapeau3, chapeau4):
     """Tirage au sort pour une equipe"""
     tirage = {}
     chapeaux = [chapeau1, chapeau2, chapeau3, chapeau4]
+    championnat_counts = {}
+
     for i, chapeau in enumerate(chapeaux, start=1):
-        # Exclure l'équipe elle-même et les autre equipes du meme championnat que l'equipe actuelle
-        chapeau_sans_equipe = [
-            adversaire
-            for adversaire in chapeau
-            if adversaire["nom"] != equipe["nom"]
-            and adversaire["championnat"] != equipe["championnat"]
+        # Exclure l'équipe elle-même et les équipes du même championnat
+        chapeau_sans_equipe_actuelle = [
+            adversaire for adversaire in chapeau
+            if adversaire["nom"] != equipe["nom"] and adversaire["championnat"] != equipe["championnat"]
         ]
-        adversaires = random.sample(chapeau_sans_equipe, 2)
-        tirage[f"pot_{i}"] = {"home": adversaires[0], "away": adversaires[1]}
+
+        # Sélectionner deux adversaires en respectant les contraintes de championnat
+        adversaires_selectionnes = []
+        while len(adversaires_selectionnes) < 2:
+            adversaire = random.choice(chapeau_sans_equipe_actuelle)
+            
+            championnat = adversaire["championnat"]
+            if championnat_counts.get(championnat, 0) < 2:
+                adversaires_selectionnes.append(adversaire)
+                championnat_counts[championnat] = championnat_counts.get(championnat, 0) + 1
+                chapeau_sans_equipe_actuelle.remove(adversaire)
+        
+        tirage[f"pot_{i}"] = {
+            "home": adversaires_selectionnes[0],
+            "away": adversaires_selectionnes[1]
+        }
+
     return tirage
 
 
