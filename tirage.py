@@ -39,45 +39,32 @@ def check_tirage_adversaires_deja_tires(i):
 
 def tirage_pour_equipe(equipe):
     """Effectuer le tirage au sort pour une équipe"""
-    
+    avoid_adversaires = []
     championship_counts = {}
     for i, chapeau in enumerate(chapeaux, start=1):
-        
-        avoided_adversaires = {} 
         adversaire_home, adversaire_away = check_tirage_adversaires_deja_tires(i)
-        #avoided_adversaires.update{"home": adversaire_home, "away" :adversaire_away}
+
         # # Filtrer les équipes disponibles dans le chapeau
         chapeau_sans_equipe_actuelle = [
             adversaire for adversaire in chapeau
             if adversaire["nom"] != equipe["nom"] and
             adversaire["championnat"] != equipe["championnat"]
             and championship_counts.get(adversaire["championnat"], 0) < 2
-            #and adversaire not in avoided_adversaires
+            and adversaire not in avoid_adversaires
         ]
         # print(championship_counts)
-        if not adversaire_home:
+        if adversaire_home == None:
             adversaire_home = random.choice(chapeau_sans_equipe_actuelle)["nom"]
             if tirage_adversaires[equipe["nom"]][i]["home"] == None and tirage_adversaires[adversaire_home][equipe["chapeau"]]["away"] == None:
-                # empty_home_adversaire = None
-                # empty_away_adversaire = None
-                # for equipe_nom, tirage_info in tirage_adversaires.items():
-                #     pot_info = tirage_info.get(i)
-                    
-                #     if pot_info:
-                #         if not pot_info["away"] and equipe_nom != equipe["nom"]:
-                #             # print("HERRRRRRRRRRE")
-                           
-                #             empty_away_adversaire = equipe_nom
-                            
-                        # if not pot_info["home"]:
-                        #     # Si l'équipe actuelle est marquée comme "home" pour une autre équipe
-                        #     empty_home_adversaire = equipe_nom
-                # adversaire_home = empty_away_adversaire
+                if tirage_adversaires[equipe["nom"]][i]["away"] == adversaire_home:
+                    k = 0
+                    while tirage_adversaires[equipe["nom"]][i]["away"] == adversaire_home:
+                        adversaire_home = random.choice(chapeau_sans_equipe_actuelle)["nom"]
+                        k += 1
+                        print(f"{k}e essai on tirage en boucle, finding adversaire home pour {equipe['nom']}")
                 if tirage_adversaires[equipe["nom"]][i]["away"] != adversaire_home:
                     tirage_adversaires[equipe["nom"]][i]["home"] = adversaire_home
                     tirage_adversaires[adversaire_home][equipe["chapeau"]]["away"] = equipe["nom"]
-                # chapeau_sans_equipe_actuelle.remove(adversaire_home)
-            
         
         chapeau_sans_equipe_actuelle = [
             adversaire for adversaire in chapeau_sans_equipe_actuelle
@@ -85,26 +72,18 @@ def tirage_pour_equipe(equipe):
             #and adversaire not in avoided_adversaires
         ]
 
-        if not adversaire_away:
+        if adversaire_away == None:
             adversaire_away = random.choice(chapeau_sans_equipe_actuelle)["nom"]
             if tirage_adversaires[equipe["nom"]][i]["away"] == None and tirage_adversaires[adversaire_away][equipe["chapeau"]]["home"] == None:
-                # empty_home_adversaire = None
-                # empty_away_adversaire = None
-                # for equipe_nom, tirage_info in tirage_adversaires.items():
-                #     pot_info = tirage_info.get(i)
-                    
-                #     if pot_info:
-                #         # if not pot_info["away"]:
-                #         #    empty_away_adversaire = equipe_nom
-                            
-                #         if not pot_info["home"] and equipe_nom != equipe["nom"]:
-                #             # Si l'équipe actuelle est marquée comme "home" pour une autre équipe
-                #             empty_home_adversaire = equipe_nom
-                # adversaire_away = empty_home_adversaire
+                if tirage_adversaires[equipe["nom"]][i]["home"] == adversaire_away:
+                    k = 0
+                    while tirage_adversaires[equipe["nom"]][i]["home"] == adversaire_away:
+                        adversaire_away = random.choice(chapeau_sans_equipe_actuelle)["nom"]
+                        k += 1
+                        print(f"{k}e essai on tirage en boucle, finding adversaire away pour {equipe['nom']}")
                 if tirage_adversaires[equipe["nom"]][i]["home"] != adversaire_away:
                     tirage_adversaires[adversaire_away][equipe["chapeau"]]["home"] = equipe["nom"]
                     tirage_adversaires[equipe["nom"]][i]["away"] = adversaire_away
-        # print(json.dumps(tirage_adversaires, indent=4, ensure_ascii=False))
 
         championnat_home = equipes_dict[adversaire_home]["championnat"]
         championship_counts[championnat_home] = championship_counts.get(championnat_home, 0) + 1
@@ -114,6 +93,7 @@ def tirage_pour_equipe(equipe):
             "home": adversaire_home,
             "away": adversaire_away
             }
+    avoid_adversaires.append(equipe)
     return tirage
     
 # Effectuer le tirage pour toutes les équipes

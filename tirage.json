@@ -42,20 +42,20 @@ tirage au sort effectué pour l'equipe Stade Brestois, numero 36
         "chapeau": 1,
         "logo": "manchester-city.png",
         "1": {
-            "home": "Borussia Dortmund",
-            "away": "PSG"
+            "home": "PSG",
+            "away": "Inter Milan"
         },
         "2": {
             "home": "AC Milan",
-            "away": "Club Bruges"
+            "away": "Juventus Turin"
         },
         "3": {
-            "home": "Celtic",
-            "away": "Dinamo Zagreb"
+            "home": "Dinamo Zagreb",
+            "away": "Feyenoord Rotterdam"
         },
         "4": {
-            "home": "Stade Brestois",
-            "away": "AS Monaco"
+            "home": "Slovan Bratislava",
+            "away": "Gérone"
         }
     },
     "Bayern Munich": {
@@ -65,20 +65,20 @@ tirage au sort effectué pour l'equipe Stade Brestois, numero 36
         "chapeau": 1,
         "logo": "bayern_munich.png",
         "1": {
-            "home": "Manchester City",
-            "away": "FC Barcelone"
+            "home": "Inter Milan",
+            "away": "Liverpool"
         },
         "2": {
-            "home": "Shakhtar Donetsk",
-            "away": "Arsenal"
+            "home": "Atlético de Madrid",
+            "away": "Juventus Turin"
         },
         "3": {
-            "home": "PSV Eindhoven",
-            "away": "Sporting Portugal"
+            "home": "Young Boys",
+            "away": "Lille"
         },
         "4": {
-            "home": "Slovan Bratislava",
-            "away": "Sparta Prague"
+            "home": "Sturm Graz",
+            "away": "Aston Villa"
         }
     },
     "Real Madrid": {
@@ -88,20 +88,20 @@ tirage au sort effectué pour l'equipe Stade Brestois, numero 36
         "chapeau": 1,
         "logo": "Real_madrid.png",
         "1": {
-            "home": "Manchester City",
-            "away": "RB Leipzig"
+            "home": "Bayern Munich",
+            "away": "Inter Milan"
         },
         "2": {
-            "home": "AC Milan",
-            "away": "Benfica Lisbonne"
+            "home": "Club Bruges",
+            "away": "Bayer Leverkusen"
         },
         "3": {
-            "home": "Feyenoord Rotterdam",
+            "home": "Lille",
             "away": "Dinamo Zagreb"
         },
         "4": {
-            "home": "Aston Villa",
-            "away": "Slovan Bratislava"
+            "home": "Slovan Bratislava",
+            "away": "Sturm Graz"
         }
     },
     "PSG": {
@@ -111,20 +111,20 @@ tirage au sort effectué pour l'equipe Stade Brestois, numero 36
         "chapeau": 1,
         "logo": "Paris_Saint-Germain.png",
         "1": {
-            "home": "Manchester City",
-            "away": "Liverpool"
+            "home": "RB Leipzig",
+            "away": "Manchester City"
         },
         "2": {
-            "home": "Shakhtar Donetsk",
-            "away": "Benfica Lisbonne"
+            "home": "Bayer Leverkusen",
+            "away": "Atalanta Bergame"
         },
         "3": {
-            "home": "Étoile Rouge de Belgrade",
-            "away": "RB Salzbourg"
+            "home": "RB Salzbourg",
+            "away": "Étoile Rouge de Belgrade"
         },
         "4": {
-            "home": "Bologne",
-            "away": "Gérone"
+            "home": "Gérone",
+            "away": "Sparta Prague"
         }
     },
     "Liverpool": {
@@ -134,20 +134,20 @@ tirage au sort effectué pour l'equipe Stade Brestois, numero 36
         "chapeau": 1,
         "logo": "liverpool.png",
         "1": {
-            "home": "PSG",
+            "home": "Bayern Munich",
             "away": "Inter Milan"
         },
         "2": {
-            "home": "Shakhtar Donetsk",
-            "away": "AC Milan"
+            "home": "AC Milan",
+            "away": "Benfica Lisbonne"
         },
         "3": {
-            "home": "Lille",
-            "away": "Celtic"
+            "home": "Dinamo Zagreb",
+            "away": "Lille"
         },
         "4": {
             "home": "Gérone",
-            "away": "Stuttgart"
+            "away": "Sparta Prague"
         }
     },
     "Inter Milan": {
@@ -157,20 +157,20 @@ tirage au sort effectué pour l'equipe Stade Brestois, numero 36
         "chapeau": 1,
         "logo": "FC_Internazionale.png",
         "1": {
-            "home": "Liverpool",
-            "away": "PSG"
+            "home": "Manchester City",
+            "away": "Bayern Munich"
         },
         "2": {
             "home": "Benfica Lisbonne",
             "away": "Club Bruges"
         },
         "3": {
-            "home": "Sporting Portugal",
-            "away": "Lille"
+            "home": "Lille",
+            "away": "PSV Eindhoven"
         },
         "4": {
-            "home": "Slovan Bratislava",
-            "away": "Sturm Graz"
+            "home": "Aston Villa",
+            "away": "AS Monaco"
         }
     },
     "Borussia Dortmund": {
@@ -180,20 +180,20 @@ tirage au sort effectué pour l'equipe Stade Brestois, numero 36
         "chapeau": 1,
         "logo": "Borussia_Dortmund.png",
         "1": {
-            "home": "Manchester City",
-            "away": "Manchester City"
+            "home": "Liverpool",
+            "away": "PSG"
         },
         "2": {
-            "home": "AC Milan",
-            "away": "Juventus Turin"
+            "home": "Juventus Turin",
+            "away": "Club Bruges"
         },
         "3": {
-            "home": "Étoile Rouge de Belgrade",
-            "away": "Sporting Portugal"
+            "home": "Celtic",
+            "away": "Feyenoord Rotterdam"
         },
         "4": {
-            "home": "Sturm Graz",
-            "away": "Slovan Bratislava"
+            "home": "AS Monaco",
+            "away": "Aston Villa"
         }
     },
     "RB Leipzig": {
@@ -203,20 +203,20 @@ tirage au sort effectué pour l'equipe Stade Brestois, numero 36
         "chapeau": 1,
         "logo": "RB_Leipzig.png",
         "1": {
-            "home": "Real Madrid",
-            "away": "Liverpool"
+            "home": "FC Barcelone",
+            "away": "PSG"
         },
         "2": {
-            "home": "Benfica Lisbonne",
-            "away": "Atalanta Bergame"
+            "home": "Shakhtar Donetsk",
+            "away": "Atlético de Madrid"
         },
         "3": {
-            "home": "PSV Eindhoven",
-            "away": "Étoile Rouge de Belgrade"
+            "home": "Dinamo Zagreb",
+            "away": "Feyenoord Rotterdam"
         },
         "4": {
             "home": "Sturm Graz",
-            "away": "Slovan Bratislava"
+            "away": "Aston Villa"
         }
     },
     "FC Barcelone": {
@@ -226,20 +226,20 @@ tirage au sort effectué pour l'equipe Stade Brestois, numero 36
         "chapeau": 1,
         "logo": "Logo_FC_Barcelona.png",
         "1": {
-            "home": "Bayern Munich",
-            "away": "PSG"
+            "home": "Liverpool",
+            "away": "RB Leipzig"
         },
         "2": {
-            "home": "Club Bruges",
-            "away": "AC Milan"
+            "home": "Atalanta Bergame",
+            "away": "Benfica Lisbonne"
         },
         "3": {
-            "home": "PSV Eindhoven",
-            "away": "Lille"
+            "home": "Feyenoord Rotterdam",
+            "away": "Young Boys"
         },
         "4": {
-            "home": "Stuttgart",
-            "away": "Slovan Bratislava"
+            "home": "Slovan Bratislava",
+            "away": "Stuttgart"
         }
     },
     "Bayer Leverkusen": {
@@ -249,20 +249,20 @@ tirage au sort effectué pour l'equipe Stade Brestois, numero 36
         "chapeau": 2,
         "logo": "Bayer_04_Leverkusen.png",
         "1": {
-            "home": "Real Madrid",
-            "away": "FC Barcelone"
+            "home": "Manchester City",
+            "away": "PSG"
         },
         "2": {
-            "home": "Shakhtar Donetsk",
-            "away": "Arsenal"
+            "home": "Real Madrid",
+            "away": "PSG"
         },
         "3": {
-            "home": "RB Salzbourg",
+            "home": "Étoile Rouge de Belgrade",
             "away": "Young Boys"
         },
         "4": {
-            "home": "Stade Brestois",
-            "away": "Aston Villa"
+            "home": "Sparta Prague",
+            "away": "Slovan Bratislava"
         }
     },
     "Atlético de Madrid": {
@@ -272,20 +272,20 @@ tirage au sort effectué pour l'equipe Stade Brestois, numero 36
         "chapeau": 2,
         "logo": "Logo_Atletico.png",
         "1": {
-            "home": "Manchester City",
-            "away": "Borussia Dortmund"
+            "home": "RB Leipzig",
+            "away": "Bayern Munich"
         },
         "2": {
-            "home": "Shakhtar Donetsk",
-            "away": "Borussia Dortmund"
+            "home": "RB Leipzig",
+            "away": "Bayern Munich"
         },
         "3": {
-            "home": "Celtic",
-            "away": "Young Boys"
+            "home": "RB Salzbourg",
+            "away": "Étoile Rouge de Belgrade"
         },
         "4": {
-            "home": "Aston Villa",
-            "away": "Stade Brestois"
+            "home": "Bologne",
+            "away": "Sparta Prague"
         }
     },
     "Atalanta Bergame": {
@@ -295,19 +295,19 @@ tirage au sort effectué pour l'equipe Stade Brestois, numero 36
         "chapeau": 2,
         "logo": "Atalanta_Bergame.png",
         "1": {
-            "home": "Manchester City",
-            "away": "Real Madrid"
+            "home": "PSG",
+            "away": "Manchester City"
         },
         "2": {
-            "home": "RB Leipzig",
-            "away": "Real Madrid"
+            "home": "PSG",
+            "away": "FC Barcelone"
         },
         "3": {
-            "home": "RB Salzbourg",
-            "away": "Dinamo Zagreb"
+            "home": "Young Boys",
+            "away": "Celtic"
         },
         "4": {
-            "home": "AS Monaco",
+            "home": "Slovan Bratislava",
             "away": "Sturm Graz"
         }
     },
@@ -318,20 +318,20 @@ tirage au sort effectué pour l'equipe Stade Brestois, numero 36
         "chapeau": 2,
         "logo": "Juventus_FC.png",
         "1": {
-            "home": "FC Barcelone",
-            "away": "Manchester City"
+            "home": "Real Madrid",
+            "away": "Liverpool"
         },
         "2": {
-            "home": "Borussia Dortmund",
-            "away": "Atlético de Madrid"
+            "home": "Manchester City",
+            "away": "Borussia Dortmund"
         },
         "3": {
-            "home": "Celtic",
-            "away": "PSV Eindhoven"
+            "home": "Sporting Portugal",
+            "away": "Celtic"
         },
         "4": {
-            "home": "Aston Villa",
-            "away": "Stade Brestois"
+            "home": "Slovan Bratislava",
+            "away": "AS Monaco"
         }
     },
     "Benfica Lisbonne": {
@@ -341,20 +341,20 @@ tirage au sort effectué pour l'equipe Stade Brestois, numero 36
         "chapeau": 2,
         "logo": "SLB.png",
         "1": {
-            "home": "Manchester City",
-            "away": "Liverpool"
+            "home": "Bayern Munich",
+            "away": "Real Madrid"
         },
         "2": {
-            "home": "Real Madrid",
+            "home": "Liverpool",
             "away": "Inter Milan"
         },
         "3": {
-            "home": "Lille",
-            "away": "Étoile Rouge de Belgrade"
+            "home": "RB Salzbourg",
+            "away": "Feyenoord Rotterdam"
         },
         "4": {
             "home": "Sturm Graz",
-            "away": "Bologne"
+            "away": "Slovan Bratislava"
         }
     },
     "Arsenal": {
@@ -365,19 +365,19 @@ tirage au sort effectué pour l'equipe Stade Brestois, numero 36
         "logo": "arsenal.png",
         "1": {
             "home": "Real Madrid",
-            "away": "FC Barcelone"
+            "away": "PSG"
         },
         "2": {
-            "home": "Bayer Leverkusen",
-            "away": "AC Milan"
+            "home": "AC Milan",
+            "away": "Juventus Turin"
         },
         "3": {
-            "home": "PSV Eindhoven",
-            "away": "RB Salzbourg"
+            "home": "Celtic",
+            "away": "Sporting Portugal"
         },
         "4": {
-            "home": "Sparta Prague",
-            "away": "AS Monaco"
+            "home": "Sturm Graz",
+            "away": "Stade Brestois"
         }
     },
     "Club Bruges": {
@@ -387,19 +387,19 @@ tirage au sort effectué pour l'equipe Stade Brestois, numero 36
         "chapeau": 2,
         "logo": "Club_Brugge.png",
         "1": {
-            "home": "Borussia Dortmund",
-            "away": "Manchester City"
+            "home": "Bayern Munich",
+            "away": "Real Madrid"
         },
         "2": {
-            "home": "Manchester City",
-            "away": "FC Barcelone"
+            "home": "Inter Milan",
+            "away": "Real Madrid"
         },
         "3": {
-            "home": "Young Boys",
-            "away": "Lille"
+            "home": "Dinamo Zagreb",
+            "away": "RB Salzbourg"
         },
         "4": {
-            "home": "Gérone",
+            "home": "Stade Brestois",
             "away": "Slovan Bratislava"
         }
     },
@@ -410,20 +410,20 @@ tirage au sort effectué pour l'equipe Stade Brestois, numero 36
         "chapeau": 2,
         "logo": "FC_Shakhtar_Donetsk.png",
         "1": {
-            "home": "RB Leipzig",
-            "away": "Borussia Dortmund"
+            "home": "Borussia Dortmund",
+            "away": "FC Barcelone"
         },
         "2": {
-            "home": "Atlético de Madrid",
-            "away": "Bayer Leverkusen"
+            "home": "Borussia Dortmund",
+            "away": "RB Leipzig"
         },
         "3": {
-            "home": "PSV Eindhoven",
-            "away": "Lille"
+            "home": "Lille",
+            "away": "Étoile Rouge de Belgrade"
         },
         "4": {
-            "home": "Sturm Graz",
-            "away": "Slovan Bratislava"
+            "home": "Slovan Bratislava",
+            "away": "Bologne"
         }
     },
     "AC Milan": {
@@ -433,19 +433,19 @@ tirage au sort effectué pour l'equipe Stade Brestois, numero 36
         "chapeau": 2,
         "logo": "AC_Milan.png",
         "1": {
-            "home": "Real Madrid",
-            "away": "PSG"
+            "home": "PSG",
+            "away": "Borussia Dortmund"
         },
         "2": {
-            "home": "Arsenal",
-            "away": "Manchester City"
+            "home": "Bayer Leverkusen",
+            "away": "Arsenal"
         },
         "3": {
-            "home": "Feyenoord Rotterdam",
-            "away": "Young Boys"
+            "home": "PSV Eindhoven",
+            "away": "Sporting Portugal"
         },
         "4": {
-            "home": "Sparta Prague",
+            "home": "Slovan Bratislava",
             "away": "Sturm Graz"
         }
     },
@@ -456,20 +456,20 @@ tirage au sort effectué pour l'equipe Stade Brestois, numero 36
         "chapeau": 3,
         "logo": "Feyenoord_Rotterdam.png",
         "1": {
-            "home": "Manchester City",
-            "away": "Liverpool"
+            "home": "Real Madrid",
+            "away": "RB Leipzig"
         },
         "2": {
-            "home": "Juventus Turin",
-            "away": "Bayer Leverkusen"
+            "home": "Arsenal",
+            "away": "Atlético de Madrid"
         },
         "3": {
-            "home": "RB Salzbourg",
-            "away": "AC Milan"
+            "home": "Benfica Lisbonne",
+            "away": "FC Barcelone"
         },
         "4": {
-            "home": "Gérone",
-            "away": "AS Monaco"
+            "home": "Stade Brestois",
+            "away": "Slovan Bratislava"
         }
     },
     "Sporting Portugal": {
@@ -479,20 +479,20 @@ tirage au sort effectué pour l'equipe Stade Brestois, numero 36
         "chapeau": 3,
         "logo": "Sporting_Clube_Portugal.png",
         "1": {
-            "home": "FC Barcelone",
-            "away": "Inter Milan"
+            "home": "Borussia Dortmund",
+            "away": "FC Barcelone"
         },
         "2": {
-            "home": "Atlético de Madrid",
+            "home": "AC Milan",
             "away": "Juventus Turin"
         },
         "3": {
-            "home": "Atlético de Madrid",
+            "home": "Arsenal",
             "away": "Juventus Turin"
         },
         "4": {
-            "home": "Sturm Graz",
-            "away": "AS Monaco"
+            "home": "Aston Villa",
+            "away": "Sparta Prague"
         }
     },
     "PSV Eindhoven": {
@@ -502,20 +502,20 @@ tirage au sort effectué pour l'equipe Stade Brestois, numero 36
         "chapeau": 3,
         "logo": "psv_eindhoven.png",
         "1": {
-            "home": "RB Leipzig",
-            "away": "FC Barcelone"
+            "home": "Real Madrid",
+            "away": "RB Leipzig"
         },
         "2": {
-            "home": "Atlético de Madrid",
-            "away": "Atalanta Bergame"
-        },
-        "3": {
-            "home": "Juventus Turin",
+            "home": "Atalanta Bergame",
             "away": "Arsenal"
         },
+        "3": {
+            "home": "Inter Milan",
+            "away": "AC Milan"
+        },
         "4": {
-            "home": "Aston Villa",
-            "away": "Stade Brestois"
+            "home": "Sparta Prague",
+            "away": "Stuttgart"
         }
     },
     "Dinamo Zagreb": {
@@ -525,20 +525,20 @@ tirage au sort effectué pour l'equipe Stade Brestois, numero 36
         "chapeau": 3,
         "logo": "Dinamo_Zagreb.png",
         "1": {
-            "home": "PSG",
+            "home": "Bayern Munich",
             "away": "Liverpool"
         },
         "2": {
-            "home": "Arsenal",
-            "away": "Club Bruges"
+            "home": "Juventus Turin",
+            "away": "Bayer Leverkusen"
         },
         "3": {
-            "home": "Atalanta Bergame",
-            "away": "Lille"
+            "home": "Juventus Turin",
+            "away": "Club Bruges"
         },
         "4": {
-            "home": "Sturm Graz",
-            "away": "Stuttgart"
+            "home": "AS Monaco",
+            "away": "Stade Brestois"
         }
     },
     "RB Salzbourg": {
@@ -548,20 +548,20 @@ tirage au sort effectué pour l'equipe Stade Brestois, numero 36
         "chapeau": 3,
         "logo": "FC_Salzburg_logo.png",
         "1": {
-            "home": "Inter Milan",
-            "away": "Borussia Dortmund"
+            "home": "Borussia Dortmund",
+            "away": "RB Leipzig"
         },
         "2": {
-            "home": "Benfica Lisbonne",
-            "away": "Shakhtar Donetsk"
+            "home": "Juventus Turin",
+            "away": "AC Milan"
         },
         "3": {
-            "home": "Arsenal",
-            "away": "Feyenoord Rotterdam"
+            "home": "Club Bruges",
+            "away": "Atlético de Madrid"
         },
         "4": {
-            "home": "Slovan Bratislava",
-            "away": "AS Monaco"
+            "home": "Aston Villa",
+            "away": "Slovan Bratislava"
         }
     },
     "Lille": {
@@ -571,20 +571,20 @@ tirage au sort effectué pour l'equipe Stade Brestois, numero 36
         "chapeau": 3,
         "logo": "LOSC_Lille.png",
         "1": {
-            "home": "FC Barcelone",
-            "away": "RB Leipzig"
+            "home": "RB Leipzig",
+            "away": "Borussia Dortmund"
         },
         "2": {
-            "home": "Atalanta Bergame",
-            "away": "Club Bruges"
-        },
-        "3": {
-            "home": "Dinamo Zagreb",
+            "home": "Club Bruges",
             "away": "Benfica Lisbonne"
         },
+        "3": {
+            "home": "Bayern Munich",
+            "away": "Shakhtar Donetsk"
+        },
         "4": {
-            "home": "Sturm Graz",
-            "away": "Aston Villa"
+            "home": "Slovan Bratislava",
+            "away": "Sparta Prague"
         }
     },
     "Étoile Rouge de Belgrade": {
@@ -594,20 +594,20 @@ tirage au sort effectué pour l'equipe Stade Brestois, numero 36
         "chapeau": 3,
         "logo": "crvena-zvezda.png",
         "1": {
-            "home": "Bayern Munich",
-            "away": "FC Barcelone"
+            "home": "RB Leipzig",
+            "away": "Bayern Munich"
         },
         "2": {
-            "home": "Juventus Turin",
-            "away": "Shakhtar Donetsk"
+            "home": "AC Milan",
+            "away": "Club Bruges"
         },
         "3": {
-            "home": "Benfica Lisbonne",
-            "away": "Shakhtar Donetsk"
+            "home": "Atlético de Madrid",
+            "away": "Bayer Leverkusen"
         },
         "4": {
-            "home": "AS Monaco",
-            "away": "Sparta Prague"
+            "home": "Slovan Bratislava",
+            "away": "Aston Villa"
         }
     },
     "Young Boys": {
@@ -617,20 +617,20 @@ tirage au sort effectué pour l'equipe Stade Brestois, numero 36
         "chapeau": 3,
         "logo": "Young_Boys.png",
         "1": {
-            "home": "RB Leipzig",
-            "away": "Inter Milan"
+            "home": "Manchester City",
+            "away": "RB Leipzig"
         },
         "2": {
-            "home": "Bayer Leverkusen",
-            "away": "Benfica Lisbonne"
+            "home": "Club Bruges",
+            "away": "AC Milan"
         },
         "3": {
             "home": "Bayer Leverkusen",
-            "away": "Club Bruges"
+            "away": "Atalanta Bergame"
         },
         "4": {
-            "home": "Aston Villa",
-            "away": "AS Monaco"
+            "home": "Sparta Prague",
+            "away": "Stade Brestois"
         }
     },
     "Celtic": {
@@ -640,20 +640,20 @@ tirage au sort effectué pour l'equipe Stade Brestois, numero 36
         "chapeau": 3,
         "logo": "Celtic_fc.png",
         "1": {
-            "home": "RB Leipzig",
-            "away": "Inter Milan"
+            "home": "Bayern Munich",
+            "away": "PSG"
         },
         "2": {
-            "home": "Benfica Lisbonne",
-            "away": "Arsenal"
+            "home": "Club Bruges",
+            "away": "Atalanta Bergame"
         },
         "3": {
-            "home": "Liverpool",
-            "away": "Atlético de Madrid"
+            "home": "Atalanta Bergame",
+            "away": "Arsenal"
         },
         "4": {
-            "home": "Sparta Prague",
-            "away": "Sturm Graz"
+            "home": "Aston Villa",
+            "away": "AS Monaco"
         }
     },
     "Slovan Bratislava": {
@@ -667,16 +667,16 @@ tirage au sort effectué pour l'equipe Stade Brestois, numero 36
             "away": "PSG"
         },
         "2": {
-            "home": "Shakhtar Donetsk",
-            "away": "Club Bruges"
+            "home": "Benfica Lisbonne",
+            "away": "Bayer Leverkusen"
         },
         "3": {
-            "home": "Celtic",
-            "away": "Sporting Portugal"
+            "home": "RB Salzbourg",
+            "away": "Feyenoord Rotterdam"
         },
         "4": {
-            "home": "Club Bruges",
-            "away": "RB Salzbourg"
+            "home": "Feyenoord Rotterdam",
+            "away": "Lille"
         }
     },
     "AS Monaco": {
@@ -687,19 +687,19 @@ tirage au sort effectué pour l'equipe Stade Brestois, numero 36
         "logo": "AS_Monaco.png",
         "1": {
             "home": "Liverpool",
-            "away": "RB Leipzig"
+            "away": "Borussia Dortmund"
         },
         "2": {
-            "home": "Bayer Leverkusen",
-            "away": "Atalanta Bergame"
+            "home": "Juventus Turin",
+            "away": "Arsenal"
         },
         "3": {
-            "home": "PSV Eindhoven",
+            "home": "Young Boys",
             "away": "Celtic"
         },
         "4": {
-            "home": "Feyenoord Rotterdam",
-            "away": "Étoile Rouge de Belgrade"
+            "home": "Celtic",
+            "away": "Dinamo Zagreb"
         }
     },
     "Sparta Prague": {
@@ -709,20 +709,20 @@ tirage au sort effectué pour l'equipe Stade Brestois, numero 36
         "chapeau": 4,
         "logo": "AC-Sparta.png",
         "1": {
-            "home": "RB Leipzig",
-            "away": "Manchester City"
+            "home": "FC Barcelone",
+            "away": "Real Madrid"
         },
         "2": {
-            "home": "Juventus Turin",
-            "away": "AC Milan"
+            "home": "Club Bruges",
+            "away": "Shakhtar Donetsk"
         },
         "3": {
-            "home": "Celtic",
-            "away": "Sporting Portugal"
+            "home": "Étoile Rouge de Belgrade",
+            "away": "PSV Eindhoven"
         },
         "4": {
-            "home": "Étoile Rouge de Belgrade",
-            "away": "Celtic"
+            "home": "Sporting Portugal",
+            "away": "PSV Eindhoven"
         }
     },
     "Aston Villa": {
@@ -732,20 +732,20 @@ tirage au sort effectué pour l'equipe Stade Brestois, numero 36
         "chapeau": 4,
         "logo": "Aston_Villa.png",
         "1": {
-            "home": "Borussia Dortmund",
-            "away": "FC Barcelone"
+            "home": "FC Barcelone",
+            "away": "Inter Milan"
         },
         "2": {
-            "home": "Shakhtar Donetsk",
-            "away": "Juventus Turin"
+            "home": "Juventus Turin",
+            "away": "Shakhtar Donetsk"
         },
         "3": {
-            "home": "Sporting Portugal",
-            "away": "Young Boys"
+            "home": "PSV Eindhoven",
+            "away": "Lille"
         },
         "4": {
-            "home": "Lille",
-            "away": "PSV Eindhoven"
+            "home": "Étoile Rouge de Belgrade",
+            "away": "Sporting Portugal"
         }
     },
     "Bologne": {
@@ -755,20 +755,20 @@ tirage au sort effectué pour l'equipe Stade Brestois, numero 36
         "chapeau": 4,
         "logo": "Bologna_FC.png",
         "1": {
-            "home": "FC Barcelone",
-            "away": "Manchester City"
+            "home": "Manchester City",
+            "away": "Borussia Dortmund"
         },
         "2": {
-            "home": "Benfica Lisbonne",
-            "away": "Shakhtar Donetsk"
+            "home": "Club Bruges",
+            "away": "Bayer Leverkusen"
         },
         "3": {
-            "home": "Celtic",
-            "away": "Feyenoord Rotterdam"
+            "home": "Dinamo Zagreb",
+            "away": "Celtic"
         },
         "4": {
-            "home": "Benfica Lisbonne",
-            "away": "Shakhtar Donetsk"
+            "home": "Shakhtar Donetsk",
+            "away": "Celtic"
         }
     },
     "Gérone": {
@@ -778,20 +778,20 @@ tirage au sort effectué pour l'equipe Stade Brestois, numero 36
         "chapeau": 4,
         "logo": "Logo_Girona_FC.png",
         "1": {
-            "home": "Bayern Munich",
-            "away": "Manchester City"
+            "home": "Inter Milan",
+            "away": "Borussia Dortmund"
         },
         "2": {
-            "home": "Bayer Leverkusen",
-            "away": "Shakhtar Donetsk"
+            "home": "Benfica Lisbonne",
+            "away": "Bayer Leverkusen"
         },
         "3": {
-            "home": "Dinamo Zagreb",
-            "away": "Feyenoord Rotterdam"
+            "home": "RB Salzbourg",
+            "away": "Étoile Rouge de Belgrade"
         },
         "4": {
-            "home": "PSG",
-            "away": "Feyenoord Rotterdam"
+            "home": "RB Salzbourg",
+            "away": "Étoile Rouge de Belgrade"
         }
     },
     "Stuttgart": {
@@ -801,20 +801,20 @@ tirage au sort effectué pour l'equipe Stade Brestois, numero 36
         "chapeau": 4,
         "logo": "VfB_Stuttgart_1893.png",
         "1": {
-            "home": "FC Barcelone",
-            "away": "Inter Milan"
+            "home": "Inter Milan",
+            "away": "Real Madrid"
         },
         "2": {
-            "home": "Benfica Lisbonne",
-            "away": "Juventus Turin"
+            "home": "Arsenal",
+            "away": "Benfica Lisbonne"
         },
         "3": {
-            "home": "Feyenoord Rotterdam",
-            "away": "Dinamo Zagreb"
+            "home": "Lille",
+            "away": "Celtic"
         },
         "4": {
-            "home": "Dinamo Zagreb",
-            "away": "Juventus Turin"
+            "home": "PSV Eindhoven",
+            "away": "Slovan Bratislava"
         }
     },
     "Sturm Graz": {
@@ -824,20 +824,20 @@ tirage au sort effectué pour l'equipe Stade Brestois, numero 36
         "chapeau": 4,
         "logo": "SK_Sturm_Graz.png",
         "1": {
-            "home": "Borussia Dortmund",
-            "away": "FC Barcelone"
+            "home": "Real Madrid",
+            "away": "RB Leipzig"
         },
         "2": {
             "home": "Atalanta Bergame",
-            "away": "Shakhtar Donetsk"
+            "away": "Juventus Turin"
         },
         "3": {
             "home": "Sporting Portugal",
-            "away": "Feyenoord Rotterdam"
+            "away": "Young Boys"
         },
         "4": {
-            "home": "Celtic",
-            "away": "Sporting Portugal"
+            "home": "Atalanta Bergame",
+            "away": "Young Boys"
         }
     },
     "Stade Brestois": {
@@ -847,20 +847,20 @@ tirage au sort effectué pour l'equipe Stade Brestois, numero 36
         "chapeau": 4,
         "logo": "SB29.png",
         "1": {
-            "home": "RB Leipzig",
-            "away": "Bayern Munich"
+            "home": "Borussia Dortmund",
+            "away": "Liverpool"
         },
         "2": {
-            "home": "Club Bruges",
-            "away": "Arsenal"
+            "home": "AC Milan",
+            "away": "Shakhtar Donetsk"
         },
         "3": {
-            "home": "Celtic",
-            "away": "Dinamo Zagreb"
+            "home": "PSV Eindhoven",
+            "away": "Feyenoord Rotterdam"
         },
         "4": {
-            "home": "PSV Eindhoven",
-            "away": "Dinamo Zagreb"
+            "home": "Dinamo Zagreb",
+            "away": "Feyenoord Rotterdam"
         }
     }
 }
