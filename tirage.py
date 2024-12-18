@@ -50,7 +50,7 @@ def tirage_pour_equipe(equipe):
             if adversaire["nom"] != equipe["nom"] and
             adversaire["championnat"] != equipe["championnat"]
             and championship_counts.get(adversaire["championnat"], 0) < 2
-            and adversaire not in avoid_adversaires
+            # and adversaire not in avoid_adversaires
         ]
         # print(championship_counts)
         if adversaire_home == None:
@@ -115,5 +115,8 @@ for equipe in equipes:
     k +=1
     # print(json.dumps(tirage_adversaires, indent=4, ensure_ascii=False))
     print(f"tirage au sort effectué pour l'equipe {equipe_nom}, numero {k}")
+    # break
 
-print(json.dumps(resultats, indent=4, ensure_ascii=False))
+# print(json.dumps(resultats, indent=4, ensure_ascii=False))
+with open('tirage.json', 'w') as fichier:
+    json.dump(resultats, fichier, indent=4)
