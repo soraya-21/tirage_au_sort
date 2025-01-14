@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+/* General styles */
+body {
+  background-image: url('../static/wallpaper/uefa.jpg');
+  background-repeat: repeat;
+  background-size: auto;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif; /* Added a default font */
+  display: flex; /* Enable flexbox for overall layout */
+}
+
+/* Styles for print */
+@media print {
+  body {
+    background-image: none; /* Remove background for printing */
+  }
+  .navbar, .sidebar, .print-button-container {
+    display: none !important; /* Hide navbar and sidebar on print */
+  }
+  .content {
+    margin-left: 0 !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+}
+
+/* Navigation bar styles */
+.navbar {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed; /* Fixed positioning at the top */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Ensure it's on top of other elements */
+}
+
+.navbar-brand {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  padding: 8px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+}
+
+.search-button {
+  padding: 8px 12px;
+  background-color: #555;
+  color: white;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+/* Sidebar styles */
+.sidebar {
+  background-color: #f4f4f4;
+  width: 200px;
+  padding: 20px;
+  position: fixed; /* Fixed positioning on the left */
+  top: 60px; /* Adjust based on navbar height */
+  left: 0;
+  bottom: 50px; /* Adjust based on footer height */
+  overflow-y: auto; /* Allow scrolling if content overflows */
+  z-index: 999; /* Ensure it's below the navbar but above main content */
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.sidebar li:last-child {
+  border-bottom: none;
+}
+
+/* Main content styles */
+.content {
+  flex-grow: 1; /* Take up remaining space */
+  margin-left: 220px; /* Adjust based on sidebar width and padding */
+  margin-top: 70px; /* Adjust based on navbar height and padding */
+  margin-bottom: 60px; /* Adjust based on footer height */
+}
+
+.flex-container {
+  display: flex;
+  gap: 10px;
+  margin: 20px;
+}
+
+.flex-container > div {
+  margin: 0px;
+  padding: 1px;
+  align-content: center;
+}
+
+.jr {
+  display: flex;
+  border: solid #F5F5F5;
+  border-radius: 50px;
+  border-width: 10px;
+  gap: 5px;
+}
+
+.jr > div {
+  margin: 0px;
+}
+
+table {
+  width: 3ch;
+  margin-bottom: 10px;
+  border-collapse: collapse;
+  border: none;
+}
+
+th, td {
+  border: none;
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  color: black;
+  background-color: transparent;
+}
+
+td {
+  background-color: transparent;
+}
+
+img {
+  max-width: 100px;
+  max-height: 100px;
+}
+
+.fl_0 {
+  display: flex;
+  border: solid rgb(0, 255, 60);
+  justify-content: center;
+  align-items: center;
+}
+
+.fl_1 {
+  display: flex;
+  width: 67%;
+  border: solid;
+  gap: 0px;
+}
+
+.fl_2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  border: solid yellow;
+}
+
+/* Footer styles */
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: fixed; /* Fixed positioning at the bottom */
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* Print button styles */
+.print-button-container {
+  position: fixed;
+  top: 70px; /* Adjust position as needed */
+  right: 20px;
+  z-index: 1000;
+}
+
+.print-button {
+  padding: 10px 15px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.print-button:hover {
+  background-color: #45a049;
+}
+.hidden {
+    display: none;
+}
+</style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="navbar-brand">Club Viewer</div>
+    <div class="search-container">
+      <input type="text" id="searchInput" class="search-input" placeholder="Search club...">
+      <button class="search-button">Search</button>
+    </div>
+  </nav>
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <h3>Categories</h3>
+    <ul>
+      <li>Link 1</li>
+      <li>Link 2</li>
+      <li>Link 3</li>
+    </ul>
+  </aside>
+
+  <!-- Main Content -->
+  <div class="content">
+    {% for club in data %}
+    <div class="flex-container club-item" data-club-name="{{ club }}">
+       <div class='jr'>
+          {% for tab in ['home','empty','away'] %}
+          {% if tab=='empty' %}
+          <div style=" display: flex; justify-content: center; align-items: center;">
+            <p style="background-color: #F5F5F5; padding: 100px 5px;"></p>
+          </div>
+          {% else %}
+          <div>
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="2" style="color: #F5F5F5;">{{tab}}</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for row in range(2) %}
+                        {% if row==1 %}
+                        <tr>
+                            {% for cell in ['pot_1','pot_2'] %}
+                                <td>
+                                    <img src="{{ url_for('static', filename='logos/' + data[club][cell][tab]['logo']) }}" class="logo" alt="{{ cell }} Logo">
+                                </td>
+                            {% endfor %}
+                        </tr>
+                        {% else %}
+                        <tr>
+                            {% for cell in ['pot_3','pot_4'] %}
+                                <td>
+                                    <img src="{{ url_for('static', filename='logos/' + data[club][cell][tab]['logo']) }}" class="logo" alt="{{ cell }} Logo">
+                                </td>
+                            {% endfor %}
+                        </tr>
+                        {% endif %}
+                    {% endfor %}
+                </tbody>
+            </table>
+          </div>
+          {% endif %}
+          {% endfor %}
+      </div>
+      <div>
+        <img src="{{ url_for('static', filename='logos/' + logos_data[club]) }}" class="logo"
+         alt="{{ club }} Logo" style="max-width: 200px;
+            max-height: 300px;">
+      </div>
+    </div>
+   {% endfor %}
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    &copy; 2023 My Football Clubs
+  </footer>
+
+  <!-- Print Button -->
+  <div class="print-button-container">
+    <button class="print-button" onclick="window.print()">Print Page</button>
+  </div>
+
+  <script>
+    const searchInput = document.getElementById('searchInput');
+    const clubItems = document.querySelectorAll('.club-item');
+    const searchButton = document.querySelector('.search-button'); // Get the search button
+
+    searchInput.addEventListener('keyup', function(event) {
+      if (event.key === 'Enter') {
+        handleSearch(); // Call handleSearch on Enter
+      }
+    });
+
+    searchButton.addEventListener('click', handleSearch); // Call handleSearch on button click
+
+    function handleSearch() {
+      searchClub(); // Call the actual search logic
+    }
+
+    function searchClub() {
+      const searchTerm = searchInput.value.toLowerCase();
+
+      clubItems.forEach(item => {
+        const clubName = item.dataset.clubName.toLowerCase();
+        if (clubName.includes(searchTerm)) {
+          item.style.display = 'flex';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    }
+  </script>
+
+</body>
+</html>

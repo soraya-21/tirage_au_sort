@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %}Welcome - Futuristic App{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-8 text-center">
+        <h2>Welcome, {{ username }}!</h2>
+        <p class="lead mt-4">Explore the futuristic features of our application.</p>
+        <!-- Add more content or features here -->
+        <a href="{{ url_for('logout') }}" class="btn btn-secondary mt-4">Logout</a>
+    </div>
+</div>
+{% endblock %}

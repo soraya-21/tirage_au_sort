@@ -121,5 +121,5 @@ for equipe in equipes:
     k +=1
     print(f"tirage au sort effectué pour l'equipe {equipe_nom}, numero {k}")
 
-with open('tirage.json', 'w') as fichier:
+with open('tirage1.json', 'w') as fichier:
     json.dump(resultats, fichier, indent=4)

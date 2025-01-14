@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.header {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.team-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.team-item {
+    background: #fff;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.team-item:hover {
+    transform: scale(1.02);
+}
+
+.team-item strong {
+    color: #007BFF;
+}
+
+.details {
+    color: #666;
+    font-size: 0.9em;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .container {
+        width: 95%;
+    }
+}

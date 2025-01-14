@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="fr">  <!-- Changed language to French -->
+<head>
+    <meta charset="UTF-8">  <!-- Ensure UTF-8 encoding is declared -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Layout with Column Colors</title>
+    <style>
+        /* You can optionally add @charset "UTF-8"; here, but it's less crucial than the HTML meta tag */
+
+        body {
+            background-image: url('../static/wallpaper/uefa.jpg');
+            background-size: cover;
+            /*background-repeat: repeat-y;*/
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background-attachment: fixed;
+        }
+
+        .pot_ {
+            max-width: 800px;
+            margin: 0 auto;
+            margin-bottom: 60px;
+        }
+
+        .pot_ table {
+            width: 100%;
+            border-collapse: collapse;
+            table-layout: fixed;
+            color: white;
+        }
+
+        .pot_ th, .pot_ td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: center;
+            vertical-align: middle;
+            width: 110px;
+        }
+
+        .pot_ .logo-container {
+            width: 80px;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            margin: 0 auto;
+        }
+
+        .pot_ .logo {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+
+        /* Column color styles */
+        .club-column {
+            background-color: #000000;
+        }
+
+        .home-column {
+            background-color: #7209b7;
+        }
+
+        .away-column {
+            background-color: #560bad;
+        }
+
+        /* New header row styles */
+        .pot_ .header-row-1 {
+            background-color: #333;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .pot_ .header-row-2 th {
+            background-color: #444;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        /* Ensure the width of the new header rows matches the combined width of home and away columns */
+        .pot_ .header-row-1 th {
+            width: 770px; /* 7 * 110px for the 7 remaining columns */
+        }
+
+        .pot_ .header-row-2 th {
+            width: 220px; /* 2 * 110px for home and away columns */
+        }
+
+        /* Ensure the club column has the same width as the away column */
+        .pot_ th.club-column, .pot_ td.club-column {
+            width: 110px; /* Set the width to match the away column width */
+        }
+        .hidden-cell {
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+
+    {% for i in range(4) %}
+    <div class="pot_">
+        <table>
+            <thead>
+                <!-- First header row -->
+                <tr class="header-row-1">
+                    <th class="club-column hidden-cell" style="border: none;"></th>
+                    <th colspan="8">Opponents</th>
+                </tr>
+                <!-- Second header row -->
+                <tr class="header-row-2">
+                    <th class="club-column hidden-cell" style="border: none;"></th>
+                    <th colspan="2">Pot 1</th>
+                    <th colspan="2">Pot 2</th>
+                    <th colspan="2">Pot 3</th>
+                    <th colspan="2">Pot 4</th>
+                </tr>
+                <!-- Main header row -->
+                <tr>
+                    <th class="club-column">Pot {{i+1}}</th>
+                    <th class="home-column">Home</th>
+                    <th class="away-column">Away</th>
+                    <th class="home-column">Home</th>
+                    <th class="away-column">Away</th>
+                    <th class="home-column">Home</th>
+                    <th class="away-column">Away</th>
+                    <th class="home-column">Home</th>
+                    <th class="away-column">Away</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for club in list_pot[i] %}
+                <tr>
+                    <td class="club-column">
+                        <div class="logo-container">
+                            <img src="{{ url_for('static', filename='logos/' + logos_data[club]) }}" class="logo" alt="{{ club }} Logo">
+                        </div>
+                        <p>{{ club }}</p>
+                    </td>
+                    {% for pot in ['pot_1', 'pot_2', 'pot_3', 'pot_4'] %}
+                        {% for el in ['home', 'away'] %}
+                            <td class="{{ el }}-column">
+                                <div class="logo-container">
+                                    <img src="{{ url_for('static', filename='logos/' + data[club][pot][el]['logo']) }}" class="logo" alt="{{ el }} Logo">
+                                </div>
+                                <p>{{ data[club][pot][el]['nom'] }}</p>
+
+                            </td>
+                        {% endfor %}
+                    {% endfor %}
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+    {% endfor %}
+
+
+</body>
+</html>

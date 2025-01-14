@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+/* Add a repeating background image to the body */
+body {
+  background-image: url('../static/wallpaper/uefa.jpg'); /* Path to the image */
+  background-repeat: repeat; /* Ensures the image repeats itself */
+  background-size: auto; /* Keeps the original size of the image */
+  background-attachment: fixed; /* Keeps the image fixed while scrolling */
+  margin: 0;
+  padding: 0;
+}
+
+.flex-container {
+  display: flex;
+  gap: 10px;
+  margin: 20px;
+}
+
+.flex-container > div {
+  margin: 0px;
+  padding: 1px;
+  align-content: center;
+}
+
+.jr {
+  display: flex;
+  border: solid #F5F5F5;
+  border-radius: 50px;
+  border-width: 10px;
+  gap: 5px;
+}
+
+.jr > div {
+  margin: 0px;
+}
+
+table {
+  width: 3ch;
+  margin-bottom: 10px;
+  border-collapse: collapse; /* Ensures no space between table cells */
+  border: none; /* Removes all table borders */
+}
+
+th, td {
+  border: none; /* Removes borders for table cells */
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  color: black; /* Default text color */
+  background-color: transparent; /* Removes background color */
+}
+
+td {
+  background-color: transparent; /* Removes background color */
+}
+
+img {
+  max-width: 100px;
+  max-height: 100px;
+}
+
+.fl_0 {
+  display: flex;
+  border: solid rgb(0, 255, 60);
+  justify-content: center; /* Centers content horizontally */
+  align-items: center;    /* Centers content vertically */
+}
+
+.fl_1 {
+  display: flex;
+  width: 67%;
+  border: solid;
+  gap: 0px;
+}
+
+.fl_2 {
+  display: flex; /* Makes the container a flexbox */
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+  height: 100%;
+  border: solid yellow;
+}
+</style>
+</head>
+<body>
+
+
+    {% for club in data %}
+    <div class="flex-container">
+       <div class='jr'>
+          {% for tab in ['home','empty','away'] %}
+          {% if tab=='empty' %}
+          <div style=" display: flex; justify-content: center; align-items: center;">
+            <p style="background-color: #F5F5F5; padding: 100px 5px;"></p>
+          </div>
+          {% else %}
+          <div>
+            <table>
+                <!-- Table Header -->
+                <thead>
+                    <tr>
+                        <th colspan="2" style="color: #F5F5F5;">{{tab}}</th>
+                    </tr>
+                </thead>
+                <!-- Table Body -->
+                <tbody>
+                    <!-- Loop through the table data -->
+                    {% for row in range(2) %}
+                        {% if row==1 %}
+                        <tr>
+                            {% for cell in ['pot_1','pot_2'] %}
+                                <td>
+                                    <img src="{{ url_for('static', filename='logos/' + data[club][cell][tab]['logo']) }}" class="logo" alt="{{ cell }} Logo">
+                                </td>
+                            {% endfor %}
+                        </tr>
+                        {% else %}
+                        <tr>
+                            {% for cell in ['pot_3','pot_4'] %}
+                                <td>
+                                    <img src="{{ url_for('static', filename='logos/' + data[club][cell][tab]['logo']) }}" class="logo" alt="{{ cell }} Logo">
+                                </td>
+                            {% endfor %}
+                        </tr>
+                        {% endif %}
+                    {% endfor %}
+                </tbody>
+            </table>
+          </div>
+          {% endif %}
+          {% endfor %}
+      </div>
+      <div>
+        <img src="{{ url_for('static', filename='logos/' + logos_data[club]) }}" class="logo"
+         alt="{{ club }} Logo" style="max-width: 200px;
+            max-height: 300px;">
+      </div>
+    </div>
+   {% endfor %}
+</body>
+</html>

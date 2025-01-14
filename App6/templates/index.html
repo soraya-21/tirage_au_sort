@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pot Elements Table</title>
+    <style>
+        body {
+            background-image: url("{{ url_for('static', filename='../static/wallpaper/uefa.jpg') }}"); /* Add this */
+            background-size: cover; /* Optional: cover the whole viewport */
+            background-repeat: no-repeat; /* Optional: prevent image from repeating */
+            /* Optional: Add a filter to the image */
+            filter: brightness(0.8); /* Adjust as needed */
+            
+        }
+
+        .table-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 15px;
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+
+        .table-container table {
+            border-collapse: collapse;
+            width: 30%; /* or auto if you don't want a fixed width */
+            margin: 20px;
+            background-color: rgba(255, 255, 255, 0.8); /*Optional: Semi-transparent background for tables */
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+            text-align: center;
+        }
+
+        img {
+            max-width: 50px;
+            max-height: 50px;
+            display: block; /* Prevents default inline image spacing */
+        }
+        /* KEY CHANGE: Style for the first column */
+        td:first-child {
+            width: 1px;         /* Minimum width */
+            white-space: nowrap; /* Prevent content from wrapping */
+            padding: 0px 8px; /*adjusts padding to remove space from the column*/
+        }
+        /* Optional improvement: aligns image to center of cell*/
+        td:first-child{
+            text-align: center;
+        }
+       
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Pot Elements</h1>
+    <div class="table-container">
+        
+        {% for i in range(4) %}
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="2">Pot {{i+1}}</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for ele in list_pot[i] %}
+                <tr>
+                    <td>
+                        <img src="{{ url_for('static', filename='logos/' + logos_data[ele]) }}" class="logo" alt="{{ ele }} Logo">
+                    </td>
+                    <td>{{ ele }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        {% endfor %}
+    </div>
+</body>
+</html>

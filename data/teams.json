@@ -70,7 +70,7 @@
         "logo": "Bayer_04_Leverkusen.png"
     },
     {
-        "nom": "Atlético de Madrid",
+        "nom": "Atletico de Madrid",
         "pays": "Espagne",
         "championnat": "La Liga",
         "chapeau": 2,
@@ -168,7 +168,7 @@
         "logo": "LOSC_Lille.png"
     },
     {
-        "nom": "Étoile Rouge de Belgrade",
+        "nom": "Etoile Rouge de Belgrade",
         "pays": "Serbie",
         "championnat": "SuperLiga",
         "chapeau": 3,
@@ -204,7 +204,7 @@
     },
     {
         "nom": "Sparta Prague",
-        "pays": "République Tchèque",
+        "pays": "République Tcheque",
         "championnat": "Fortuna Liga",
         "chapeau": 4,
         "logo": "AC-Sparta.png"
@@ -224,7 +224,7 @@
         "logo": "Bologna_FC.png"
     },
     {
-        "nom": "Gérone",
+        "nom": "Gerone",
         "pays": "Espagne",
         "championnat": "La Liga",
         "chapeau": 4,
