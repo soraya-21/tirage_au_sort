@@ -105,7 +105,7 @@
         },
         "pot_3": {
             "home": {
-                "nom": "Etoile Rouge de Belgrade",
+                "nom": "Étoile Rouge de Belgrade",
                 "pays": "Serbie",
                 "championnat": "SuperLiga",
                 "chapeau": 3,
@@ -221,7 +221,7 @@
         },
         "pot_2": {
             "home": {
-                "nom": "Atletico de Madrid",
+                "nom": "Atlético de Madrid",
                 "pays": "Espagne",
                 "championnat": "La Liga",
                 "chapeau": 2,
@@ -244,7 +244,7 @@
                 "logo": "Dinamo_Zagreb.png"
             },
             "away": {
-                "nom": "Etoile Rouge de Belgrade",
+                "nom": "Étoile Rouge de Belgrade",
                 "pays": "Serbie",
                 "championnat": "SuperLiga",
                 "chapeau": 3,
@@ -294,7 +294,7 @@
                 "logo": "AC_Milan.png"
             },
             "away": {
-                "nom": "Atletico de Madrid",
+                "nom": "Atlético de Madrid",
                 "pays": "Espagne",
                 "championnat": "La Liga",
                 "chapeau": 2,
@@ -326,7 +326,7 @@
                 "logo": "VfB_Stuttgart_1893.png"
             },
             "away": {
-                "nom": "Gerone",
+                "nom": "Gérone",
                 "pays": "Espagne",
                 "championnat": "La Liga",
                 "chapeau": 4,
@@ -451,7 +451,7 @@
         },
         "pot_4": {
             "home": {
-                "nom": "Gerone",
+                "nom": "Gérone",
                 "pays": "Espagne",
                 "championnat": "La Liga",
                 "chapeau": 4,
@@ -633,7 +633,7 @@
         },
         "pot_3": {
             "home": {
-                "nom": "Etoile Rouge de Belgrade",
+                "nom": "Étoile Rouge de Belgrade",
                 "pays": "Serbie",
                 "championnat": "SuperLiga",
                 "chapeau": 3,
@@ -656,7 +656,7 @@
                 "logo": "Bologna_FC.png"
             },
             "away": {
-                "nom": "Gerone",
+                "nom": "Gérone",
                 "pays": "Espagne",
                 "championnat": "La Liga",
                 "chapeau": 4,
@@ -664,7 +664,7 @@
             }
         }
     },
-    "Atletico de Madrid": {
+    "Atlético de Madrid": {
         "pot_1": {
             "home": {
                 "nom": "Liverpool",
@@ -888,7 +888,7 @@
                 "logo": "Juventus_FC.png"
             },
             "away": {
-                "nom": "Atletico de Madrid",
+                "nom": "Atlético de Madrid",
                 "pays": "Espagne",
                 "championnat": "La Liga",
                 "chapeau": 2,
@@ -913,7 +913,7 @@
         },
         "pot_4": {
             "home": {
-                "nom": "Gerone",
+                "nom": "Gérone",
                 "pays": "Espagne",
                 "championnat": "La Liga",
                 "chapeau": 4,
@@ -970,7 +970,7 @@
                 "logo": "psv_eindhoven.png"
             },
             "away": {
-                "nom": "Etoile Rouge de Belgrade",
+                "nom": "Étoile Rouge de Belgrade",
                 "pays": "Serbie",
                 "championnat": "SuperLiga",
                 "chapeau": 3,
@@ -1145,7 +1145,7 @@
         },
         "pot_2": {
             "home": {
-                "nom": "Atletico de Madrid",
+                "nom": "Atlético de Madrid",
                 "pays": "Espagne",
                 "championnat": "La Liga",
                 "chapeau": 2,
@@ -1293,7 +1293,7 @@
         },
         "pot_3": {
             "home": {
-                "nom": "Etoile Rouge de Belgrade",
+                "nom": "Étoile Rouge de Belgrade",
                 "pays": "Serbie",
                 "championnat": "SuperLiga",
                 "chapeau": 3,
@@ -1448,7 +1448,7 @@
                 "logo": "Slovan_Bratislava.png"
             },
             "away": {
-                "nom": "Gerone",
+                "nom": "Gérone",
                 "pays": "Espagne",
                 "championnat": "La Liga",
                 "chapeau": 4,
@@ -1475,7 +1475,7 @@
         },
         "pot_2": {
             "home": {
-                "nom": "Atletico de Madrid",
+                "nom": "Atlético de Madrid",
                 "pays": "Espagne",
                 "championnat": "La Liga",
                 "chapeau": 2,
@@ -1573,7 +1573,7 @@
         },
         "pot_4": {
             "home": {
-                "nom": "Gerone",
+                "nom": "Gérone",
                 "pays": "Espagne",
                 "championnat": "La Liga",
                 "chapeau": 4,
@@ -1588,7 +1588,7 @@
             }
         }
     },
-    "Etoile Rouge de Belgrade": {
+    "Étoile Rouge de Belgrade": {
         "pot_1": {
             "home": {
                 "nom": "PSG",
@@ -1746,7 +1746,7 @@
                 "logo": "Atalanta_Bergame.png"
             },
             "away": {
-                "nom": "Atletico de Madrid",
+                "nom": "Atlético de Madrid",
                 "pays": "Espagne",
                 "championnat": "La Liga",
                 "chapeau": 2,
@@ -1762,7 +1762,7 @@
                 "logo": "Young_Boys.png"
             },
             "away": {
-                "nom": "Etoile Rouge de Belgrade",
+                "nom": "Étoile Rouge de Belgrade",
                 "pays": "Serbie",
                 "championnat": "SuperLiga",
                 "chapeau": 3,
@@ -1953,7 +1953,7 @@
         },
         "pot_3": {
             "home": {
-                "nom": "Etoile Rouge de Belgrade",
+                "nom": "Étoile Rouge de Belgrade",
                 "pays": "Serbie",
                 "championnat": "SuperLiga",
                 "chapeau": 3,
@@ -1976,7 +1976,7 @@
                 "logo": "AS_Monaco.png"
             },
             "away": {
-                "nom": "Gerone",
+                "nom": "Gérone",
                 "pays": "Espagne",
                 "championnat": "La Liga",
                 "chapeau": 4,
@@ -2010,7 +2010,7 @@
                 "logo": "Juventus_FC.png"
             },
             "away": {
-                "nom": "Atletico de Madrid",
+                "nom": "Atlético de Madrid",
                 "pays": "Espagne",
                 "championnat": "La Liga",
                 "chapeau": 2,
@@ -2116,7 +2116,7 @@
             }
         }
     },
-    "Gerone": {
+    "Gérone": {
         "pot_1": {
             "home": {
                 "nom": "Liverpool",
@@ -2201,7 +2201,7 @@
         },
         "pot_2": {
             "home": {
-                "nom": "Atletico de Madrid",
+                "nom": "Atlético de Madrid",
                 "pays": "Espagne",
                 "championnat": "La Liga",
                 "chapeau": 2,
@@ -2233,7 +2233,7 @@
         },
         "pot_4": {
             "home": {
-                "nom": "Gerone",
+                "nom": "Gérone",
                 "pays": "Espagne",
                 "championnat": "La Liga",
                 "chapeau": 4,
@@ -2356,7 +2356,7 @@
                 "logo": "FC_Salzburg_logo.png"
             },
             "away": {
-                "nom": "Etoile Rouge de Belgrade",
+                "nom": "Étoile Rouge de Belgrade",
                 "pays": "Serbie",
                 "championnat": "SuperLiga",
                 "chapeau": 3,

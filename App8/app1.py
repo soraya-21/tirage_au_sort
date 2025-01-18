@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 
 # Load tirage data
-with open('tirage1.json', 'r') as file:
+with open('tirage copy 6.json', 'r') as file:
     data = json.load(file)  # Parse the JSON data
 
 # Load logos data
@@ -27,10 +27,22 @@ def pot_list(pot_number):
   unique_list = list(set(pot_list_))
   return unique_list
 
-pot_1_list = pot_list(1)
-pot_2_list = pot_list(2)
-pot_3_list = pot_list(3)
-pot_4_list = pot_list(4)
+
+with open("data/teams.json", "r", encoding="utf-8") as f:
+    equipes = json.load(f)
+equipes_dict = {equipe["nom"]: equipe for equipe in equipes}
+
+pot_1_list = [equipe["nom"] for equipe in equipes if equipe["chapeau"] == 1]
+pot_2_list = [equipe["nom"] for equipe in equipes if equipe["chapeau"] == 2]
+pot_3_list = [equipe["nom"] for equipe in equipes if equipe["chapeau"] == 3]
+pot_4_list = [equipe["nom"] for equipe in equipes if equipe["chapeau"] == 4]
+
+# pot_1_list = pot_list(1)
+# pot_2_list = pot_list(2)
+# pot_3_list = pot_list(3)
+# pot_4_list = pot_list(4)
+
+print(pot_2_list)
 
 list_pot = [pot_1_list, pot_2_list, pot_3_list, pot_4_list]
 

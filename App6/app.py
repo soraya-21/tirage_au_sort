@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 
 # Load tirage data
-with open('tirage.json', 'r') as file:
+with open('tirage copy.json', 'r') as file:
     data = json.load(file)  # Parse the JSON data
 
 # Load logos data
